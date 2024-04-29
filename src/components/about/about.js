@@ -1,15 +1,15 @@
-import Header2 from "../compoents/header2/header2";
-import Footer from "../compoents/footer/footer";
-import Clients from "../compoents/clients/clients";
-import Enquire from "../compoents/enquire/enquire";
+import Header2 from "../header/header2";
+import Footer from "../footer/footer";
+import Clients from "../clients/clients";
+import Enquire from "../enquire/enquire";
 export const metadata = {
   title: "About Company | Urban Vypari",
   description:
     "Urban Vyapari empowers retailers and restaurateurs with game-changing, AI-powered technology.",
 };
-export default function About() {
+function About() {
   return (
-    <>
+    <div>
       <Header2 />
       {/* Start main-content */}
       <section
@@ -245,6 +245,8 @@ export default function About() {
       <Clients />
       {/*End Clients Section */}
       <Footer />
-    </>
+    </div>
   );
 }
+
+export default About;

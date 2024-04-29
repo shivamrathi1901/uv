@@ -1,8 +1,7 @@
-"use client";
-import Image from "next/image";
-import Header2 from "../compoents/header2/header2";
-import Footer from "../compoents/footer/footer";
+import Header2 from "../header/header2";
+import Footer from "../footer/footer";
 import { useState } from "react";
+import { Modal } from "bootstrap";
 import axios from "axios";
 export default function ContactUs() {
   const [name, setname] = useState("");
@@ -28,7 +27,8 @@ export default function ContactUs() {
         console.log(response);
         if (response.status == 200) {
           const popup = document.getElementById("popupMessage");
-          const modal = new bootstrap.Modal(popup);
+        //   const modal = new bootstrap.Modal(popup);
+          const modal = Modal(popup);
           modal.show();
 
           setTimeout(() => {
