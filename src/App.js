@@ -26,7 +26,7 @@ function App() {
               className="bg-image"
               style={{
                 backgroundImage:
-                  "url(images/main-slider/IMG_20231014_140338.webp)",
+                  "url(../public/images/main-slider/IMG_20231014_140338.webp)",
               }}
             />
             <div className="auto-container">
@@ -41,7 +41,7 @@ function App() {
                       Power Your Business
                     </h1>
                     <div className="btn-box animate-3">
-                      <a href="#" className="theme-btn btn-style-one">
+                      <a className="theme-btn btn-style-one">
                         <span className="btn-title">Explore Now</span>
                       </a>
                       <a
